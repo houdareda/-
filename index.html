@@ -15,6 +15,7 @@
 <body>
 
 
+  <input type="text">
     <div class="head_sec">
         <img src="img/favicon.png" alt="">
     </div>
@@ -26,7 +27,6 @@
 
             <div class="form-group">
 
-                <label for="name"><i class="fa-solid fa-user"></i>اختر اسم الأيجنت</label>
                 <input list="nameList" id="name" name="Name Agent"  class="form-control form-control-input name_ag_inp" placeholder="الاسم" required />
                 
                 <datalist id="nameList" class="name_Agent1">
@@ -36,14 +36,12 @@
             </div>
 
             <div class="form-group">
-                <label for="datee"><i class="fa-solid fa-calendar-days"></i> تاريخ اليوم </label>
                 <input type="date" id="datee" name="date"  class="form-control form-control-input" required />
             </div>
 
 
             <div class="form-group">
                 
-                <label><i class="fa-solid fa-money-bill-1-wave"></i> مصروفات اليوم كلها</label>
                 <input type="number" maxlength="6" name="Total expenses"  class="form-control form-control-input"  placeholder="توتال مصاريف اليوم"/>
        
             </div>
@@ -52,7 +50,6 @@
 
             <div class="form-group">
                 
-                <label for="masrofat_P"><i class="fa-solid fa-wallet"></i>  مصروفات  شخصية </label>
                 <input type="number" name="Personal expenses"  maxlength="6" class="form-control form-control-input" placeholder="المصروفات الشخصية" />
                 
        
@@ -60,7 +57,6 @@
 
             <div class="form-group">
                 
-                <label for="Markt-1"><i class="fa-solid fa-sack-dollar"></i>  مصروفات  اعلانات Markting 1 </label>
                 <input type="number" id="Markt-1" name="expenses Markt-1"   maxlength="6" class="form-control form-control-input" placeholder="المصروفات اعلانية"  />
                 
        
@@ -69,7 +65,6 @@
 
             <div class="form-group">
                 
-                <label for="Markt-2"><i class="fa-solid fa-sack-dollar"></i>     مصروفات  اعلانات Markting 2 </label>
                 <input type="number" id="Markt-2" name="expenses Markt-2"   maxlength="6"  class="form-control form-control-input" placeholder="المصروفات اعلانية"  />
                 
        
@@ -83,11 +78,7 @@
 
 
             <div class="show_div">
-                <label>
-                  <input type="checkbox" id="toggleCheckbox" onclick="toggleInputs()"> 
-                  <i class="fa-solid fa-money-bill-transfer"></i>
-                  تحويل لموظف اخر  
-                </label>
+          
               </div>
               
               
@@ -96,7 +87,6 @@
 
                 <div class="form-group">
                 
-                    <label for="Recipient"><i class="fa-solid fa-user-pen"></i> اختر اسم الموظف المحول له </label>
                     <input list="suggestions2" id="Recipient" name="Recipient Name"  class="form-control form-control-input" placeholder="اسم الموظف المحول له"  />
                     
                     <datalist id="suggestions2" class="name_Agent2">
@@ -111,7 +101,6 @@
 
                 <div class="form-group">
                 
-                    <label for="RecipientMony"><i class="fa-solid fa-money-bill-trend-up"></i>  المبلغ الذي تريد تحويله للموظف</label>
                     <input list="number" id="RecipientMony" maxlength="6" name="Recipient Mony"  class="form-control form-control-input" placeholder="ادخل المبلغ المحول   "  />
            
                 </div>
@@ -126,11 +115,7 @@
 
 
               <div class="show_div">
-                <label>
-                  <input type="checkbox" id="toggleCheckbox2" onclick="toggleInputs2()"> 
-                  <i class="fa-solid fa-hand-holding-dollar"></i>
-                 طلب فلوس
-                </label>
+         
               </div>
               
               
@@ -140,7 +125,6 @@
 
                 <div class="form-group">
                 
-                    <label for="Requestedamount"><i class="fa-solid fa-dollar-sign"></i> المبلغ الذي تريده</label>
                     <input list="number" id="Requestedamount" name="Requested amount" maxlength="6" class="form-control form-control-input" placeholder="ادخل المبلغ المطلوب"  />
            
                 </div>
@@ -149,7 +133,6 @@
                 
                 <div class="form-group">
                 
-                    <label for="Waleet"><i class="fa-solid fa-user-pen"></i> اختر رقم المحفظة </label>
                     <input list="suggestions3" id="Waleet" name="Number Wallet"  class="form-control form-control-input" placeholder="   اختر رقم المخفظة"  />
                     
                     <datalist id="suggestions3" class="phones_agent">
@@ -165,7 +148,7 @@
 
               <div class="form-group">
                 
-                <label for="Password"><i class="fa-solid fa-lock"></i>   الرقم السري الخاص بك</label>
+                
                 <input id="Password" class="form-control form-control-input password_inp" placeholder="ادخل الباسورد "  />
        
             </div>
@@ -181,7 +164,7 @@
 
 
 
-<!-- 
+
     <script>
 function toggleInputs() {
   var inputContainer = document.getElementById('inputContainer');
@@ -208,7 +191,7 @@ function toggleInputs2() {
     </script>
     
 
-    <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>
